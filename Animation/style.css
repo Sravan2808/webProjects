@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box
+    font-family: 'work sans';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box1{
+    height:300px;
+    width: 300px;
+    background-color: crimson;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    animation-timing-function: linear;
+}
+
+#box2{
+    height:300px;
+    width: 300px;
+    background-color: lightseagreen;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes box-anime {
+    from{
+        left:0;
+    }
+    to{
+        left:75%;
+    }
+    
+}
